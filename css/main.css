@@ -1,0 +1,78 @@
+.input-calc{
+    display: none;
+}
+
+.simbolos .grupo div [value = true]{
+    background-color: white !important; 
+    color: #ffe603 !important;
+}
+
+.input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 22px;
+    text-align: right;
+}
+
+.calculadora{
+    width: 250px;
+    padding: 20px 20px 30px;
+    margin: 50px;
+    height: 320px;
+    background-color: black;
+}
+
+.simbolos{
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px 0; */
+}
+
+.simbolos .grupo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    /* gap: 30px 0; */
+}
+
+.simbolos .grupo .zero{
+    grid-column: 1 / 3;
+}
+
+.simbolos .grupo div{
+    padding: 4px;
+}
+
+.simbolos .grupo div button{
+    display: inline;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: #383838;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+}
+
+.simbolos .grupo div .calc{
+    background-color: #ffe603;
+}
+
+.simbolos .grupo div #virgula{
+    background-color: #383838;
+}
+
+.simbolos .grupo div .limpar, .simbolos .grupo div #mais-ou-menos, .simbolos .grupo div #porc{
+    background-color: #969696;
+}
+
+.input-output input{
+    width: 95%;
+    margin-bottom: 10px;
+}
